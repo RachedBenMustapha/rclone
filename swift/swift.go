@@ -795,6 +795,10 @@ func (o *Object) MimeType() string {
 	return o.info.ContentType
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // Check the interfaces are satisfied
 var (
 	_ fs.Fs        = &Fs{}

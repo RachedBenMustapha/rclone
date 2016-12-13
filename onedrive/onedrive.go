@@ -652,6 +652,10 @@ func (o *Object) Remote() string {
 	return o.remote
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // srvPath returns a path for use in server
 func (o *Object) srvPath() string {
 	return replaceReservedChars(o.fs.rootSlash() + o.remote)

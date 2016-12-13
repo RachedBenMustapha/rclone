@@ -609,6 +609,10 @@ func (o *Object) readMetaData() (err error) {
 	return nil
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // ModTime returns the modification time of the object
 //
 // It attempts to read the objects mtime and if that isn't present the

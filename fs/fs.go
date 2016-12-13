@@ -176,6 +176,8 @@ type Object interface {
 
 	// Removes this object
 	Remove() error
+
+	Metadata() map[string]*string
 }
 
 // ObjectInfo contains information about an object.

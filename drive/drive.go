@@ -924,6 +924,10 @@ func (o *Object) Storable() bool {
 	return true
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // httpResponse gets an http.Response object for the object o.url
 // using the method passed in
 func (o *Object) httpResponse(method string, options []fs.OpenOption) (req *http.Request, res *http.Response, err error) {

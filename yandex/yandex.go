@@ -98,6 +98,10 @@ func (f *Fs) String() string {
 	return fmt.Sprintf("Yandex %s", f.root)
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // read access token from ConfigFile string
 func getAccessToken(name string) (*oauth2.Token, error) {
 	// Read the token from the config file

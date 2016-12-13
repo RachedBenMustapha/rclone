@@ -1415,6 +1415,10 @@ func (o *Object) MimeType() string {
 	return o.mimeType
 }
 
+func (o *Object) Metadata() map[string]*string {
+	return map[string]*string{}
+}
+
 // Check the interfaces are satisfied
 var (
 	_ fs.Fs         = &Fs{}
